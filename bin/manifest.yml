@@ -13,5 +13,10 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 #
-# PRUEBA 2e3111
-spring.profiles.include=common
+
+---
+applications:
+- name: jpetstore
+  memory: 450m
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {stack_threads: 10}]'
